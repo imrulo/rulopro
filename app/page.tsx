@@ -804,13 +804,34 @@ export default function RuloProLanding() {
             </div>
           </div>
 
-          <div className="border-t border-blue-400/30 pt-8 text-center">
-            <p className="text-blue-200">
-              © 2025 Rulo.pro - Consultoría Digital para Profesionales de Élite |
-              <Link href="https://rulo.pro" className="text-[#FFD700] hover:underline ml-2 transition-colors">
+          <div className="border-t border-blue-400/30 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+              <p className="text-blue-200 text-center md:text-left">
+                © 2025 Rulo.pro - Consultoría Digital para Profesionales de Élite
+              </p>
+
+              {/* Legal Links */}
+              <div className="flex flex-wrap justify-center md:justify-end gap-4 text-sm">
+                <Link href="/legal/privacy" className="text-blue-200 hover:text-white transition-colors">
+                  Privacidad
+                </Link>
+                <Link href="/legal/terms" className="text-blue-200 hover:text-white transition-colors">
+                  Términos
+                </Link>
+                <Link href="/legal/cookies" className="text-blue-200 hover:text-white transition-colors">
+                  Cookies
+                </Link>
+                <Link href="/legal/crypto" className="text-blue-200 hover:text-white transition-colors">
+                  Crypto
+                </Link>
+              </div>
+            </div>
+
+            <div className="mt-4 text-center">
+              <Link href="https://rulo.pro" className="text-[#FFD700] hover:underline transition-colors">
                 Made by Rulo.pro
               </Link>
-            </p>
+            </div>
           </div>
         </div>
       </footer>
