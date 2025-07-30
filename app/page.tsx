@@ -69,7 +69,9 @@ export default function RuloProLanding() {
                 Contacto
               </Link>
               <Button className="bg-gradient-to-r from-[#2E8B57] to-[#20B2AA] hover:from-[#20B2AA] hover:to-[#2E8B57] text-white px-6 py-2 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 btn-premium">
-                Consulta Gratuita
+                <Link href="https://wa.link/6difl3" target="_blank">
+                  Consulta Gratuita
+                </Link>
               </Button>
             </nav>
 
@@ -102,7 +104,9 @@ export default function RuloProLanding() {
                   Contacto
                 </Link>
                 <Button className="w-full bg-gradient-to-r from-[#2E8B57] to-[#20B2AA] text-white py-3 rounded-xl font-semibold">
-                  Consulta Gratuita
+                  <Link href="https://wa.link/6difl3" target="_blank">
+                    Consulta Gratuita
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -153,7 +157,7 @@ export default function RuloProLanding() {
                 className="w-full sm:w-auto bg-gradient-to-r from-[#2E8B57] to-[#20B2AA] hover:from-[#20B2AA] hover:to-[#2E8B57] text-white px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 rounded-xl btn-premium mobile-optimized"
                 asChild
               >
-                <Link href="https://wa.link/cbvfs0" target="_blank">
+                <Link href="https://wa.link/6difl3" target="_blank">
                   <MessageCircle className="mr-3 h-5 w-5" />
                   Auditoría Gratuita (15 min)
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -378,7 +382,7 @@ export default function RuloProLanding() {
                   className="w-full bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 btn-premium"
                   asChild
                 >
-                  <Link href="https://wa.link/cbvfs0" target="_blank">
+                  <Link href="https://wa.link/6difl3" target="_blank">
                     Empezar Ahora
                   </Link>
                 </Button>
@@ -433,7 +437,7 @@ export default function RuloProLanding() {
                   className="w-full bg-gradient-to-r from-[#FFD700] to-[#FFA500] hover:from-[#FFA500] hover:to-[#FFD700] text-gray-900 py-3 rounded-xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300 btn-premium"
                   asChild
                 >
-                  <Link href="https://wa.link/cbvfs0" target="_blank">
+                  <Link href="https://wa.link/6difl3" target="_blank">
                     ¡Lo Quiero!
                   </Link>
                 </Button>
@@ -487,7 +491,7 @@ export default function RuloProLanding() {
                   className="w-full bg-gradient-to-r from-[#2E8B57] to-[#20B2AA] hover:from-[#20B2AA] hover:to-[#2E8B57] text-white py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 btn-premium"
                   asChild
                 >
-                  <Link href="https://wa.link/cbvfs0" target="_blank">
+                  <Link href="https://wa.link/6difl3" target="_blank">
                     Ser Élite
                   </Link>
                 </Button>
@@ -649,7 +653,7 @@ export default function RuloProLanding() {
             className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] hover:from-[#FFA500] hover:to-[#FFD700] text-gray-900 px-12 py-4 text-xl font-bold mb-8 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 btn-premium mobile-optimized"
             asChild
           >
-            <Link href="https://wa.link/cbvfs0" target="_blank">
+            <Link href="https://wa.link/6difl3" target="_blank">
               <MessageCircle className="mr-3 h-6 w-6" />
               Hablar por WhatsApp Ahora
               <ArrowRight className="ml-3 h-6 w-6" />
@@ -808,7 +812,7 @@ export default function RuloProLanding() {
           className="bg-[#25D366] hover:bg-[#25D366]/90 text-white rounded-full p-4 shadow-2xl hover:shadow-3xl transition-all duration-300 animate-pulse-glow group"
           asChild
         >
-          <Link href="https://wa.link/cbvfs0" target="_blank">
+          <Link href="https://wa.link/6difl3" target="_blank">
             <MessageCircle className="h-8 w-8 group-hover:scale-110 transition-transform" />
           </Link>
         </Button>
