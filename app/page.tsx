@@ -20,6 +20,10 @@ import {
   ArrowRight,
   Menu,
   X,
+  TrendingUp,
+  Users,
+  Award,
+  Smartphone,
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -146,6 +150,10 @@ export default function RuloProLanding() {
                 {" "}
                 generan resultados reales, sin complicaciones técnicas.
               </span>
+              Especializado en dentistas, abogados, médicos y cirujanos que buscan automatizar sus procesos, aumentar su
+              credibilidad online y captar más clientes de alto valor. Mi metodología probada combina tecnología
+              avanzada con estrategias de marketing digital específicas para profesionales de la salud y servicios
+              legales en el mercado latino de Estados Unidos.
             </p>
 
             <div
@@ -232,7 +240,9 @@ export default function RuloProLanding() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">¿Te Suena Familiar?</h2>
           <p className="text-lg sm:text-xl text-gray-600 mb-16 max-w-3xl mx-auto">
-            Estos son los dolores más comunes que veo en profesionales exitosos:
+            Estos son los dolores más comunes que veo en profesionales exitosos que aún no han digitalizado
+            completamente sus procesos. La falta de automatización está costándoles miles de dólares mensuales en
+            oportunidades perdidas, tiempo desperdiciado y clientes que se van a la competencia.
           </p>
 
           <div className="grid md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 text-left mb-12 sm:mb-16 px-2">
@@ -243,7 +253,9 @@ export default function RuloProLanding() {
                   Pierdes citas de alto valor porque confías en WhatsApp manual
                 </h3>
                 <p className="text-gray-600">
-                  Sin recordatorios automáticos, confirmaciones o seguimiento profesional.
+                  Sin recordatorios automáticos, confirmaciones o seguimiento profesional. Cada cita perdida representa
+                  entre $300-800 en ingresos que nunca recuperarás. Los pacientes olvidan, cancelan último momento o
+                  simplemente no aparecen.
                 </p>
               </div>
             </div>
@@ -252,7 +264,11 @@ export default function RuloProLanding() {
               <div className="text-red-500 mt-1 text-xl">❌</div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-2">Tu web no genera confianza en clientes latinos</h3>
-                <p className="text-gray-600">¡Y la competencia sí! Pierdes pacientes antes de que te conozcan.</p>
+                <p className="text-gray-600">
+                  ¡Y la competencia sí! Pierdes pacientes antes de que te conozcan. Una web desactualizada, lenta o que
+                  no habla el idioma de tu audiencia es como tener la puerta de tu consultorio cerrada. Los clientes
+                  latinos buscan profesionales que entiendan su cultura y necesidades específicas.
+                </p>
               </div>
             </div>
 
@@ -262,7 +278,11 @@ export default function RuloProLanding() {
                 <h3 className="font-semibold text-gray-900 mb-2">
                   Gastas horas en procesos que podrían ser 100% automáticos
                 </h3>
-                <p className="text-gray-600">Tiempo que podrías invertir en más pacientes o con tu familia.</p>
+                <p className="text-gray-600">
+                  Tiempo que podrías invertir en más pacientes o con tu familia. Cada hora que pasas enviando
+                  recordatorios manualmente, procesando pagos o actualizando calendarios es una hora menos que puedes
+                  dedicar a lo que realmente sabes hacer: cuidar a tus pacientes.
+                </p>
               </div>
             </div>
 
@@ -270,7 +290,11 @@ export default function RuloProLanding() {
               <div className="text-red-500 mt-1 text-xl">❌</div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-2">Quisieras aceptar pagos internacionales en crypto</h3>
-                <p className="text-gray-600">Pero no sabes por dónde empezar ni cómo implementarlo de forma segura.</p>
+                <p className="text-gray-600">
+                  Pero no sabes por dónde empezar ni cómo implementarlo de forma segura. El mercado cripto representa
+                  una oportunidad enorme para profesionales que atienden clientes internacionales, especialmente en
+                  cirugías estéticas y tratamientos especializados de alto valor.
+                </p>
               </div>
             </div>
           </div>
@@ -283,6 +307,8 @@ export default function RuloProLanding() {
                 {" "}
                 Yo soy el experto en hacer que la tecnología trabaje PARA TI.
               </span>
+              Mi trabajo es eliminar todas estas fricciones digitales para que puedas enfocarte en lo que mejor sabes
+              hacer: brindar un servicio excepcional a tus pacientes y clientes.
             </p>
           </div>
         </div>
@@ -293,7 +319,9 @@ export default function RuloProLanding() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Cómo Te Ayudo</h2>
-            <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">Mi proceso probado en 4 pasos simples:</p>
+            <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
+              Mi proceso probado en 4 pasos simples que ha transformado más de 500 prácticas profesionales:
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 xl:gap-10 px-2">
@@ -303,7 +331,10 @@ export default function RuloProLanding() {
                   <Search className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">1. Auditoría Express</h3>
-                <p className="text-gray-600">Identificamos fugas de dinero en tu proceso actual en 15 minutos.</p>
+                <p className="text-gray-600">
+                  Identificamos fugas de dinero en tu proceso actual en 15 minutos. Analizamos tu web, sistemas de
+                  citas, procesos de pago y puntos de fricción que están costándote clientes.
+                </p>
               </CardContent>
             </Card>
 
@@ -313,7 +344,10 @@ export default function RuloProLanding() {
                   <Lightbulb className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">2. Solución a Medida</h3>
-                <p className="text-gray-600">Diseñamos tu sistema ideal basado en tu tipo de práctica.</p>
+                <p className="text-gray-600">
+                  Diseñamos tu sistema ideal basado en tu tipo de práctica. Cada profesión tiene necesidades
+                  específicas: un dentista no necesita lo mismo que un abogado de inmigración.
+                </p>
               </CardContent>
             </Card>
 
@@ -323,7 +357,10 @@ export default function RuloProLanding() {
                   <Zap className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">3. Implementación Relámpago</h3>
-                <p className="text-gray-600">72 horas con IA avanzada para tener todo funcionando.</p>
+                <p className="text-gray-600">
+                  72 horas con IA avanzada para tener todo funcionando. Mientras tú sigues atendiendo pacientes, yo
+                  construyo tu nueva infraestructura digital.
+                </p>
               </CardContent>
             </Card>
 
@@ -333,22 +370,95 @@ export default function RuloProLanding() {
                   <Target className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">4. Entrenamiento 'Sin Dolor'</h3>
-                <p className="text-gray-600">Aprendes a usarlo en 60 minutos. ¡Garantizado!</p>
+                <p className="text-gray-600">
+                  Aprendes a usarlo en 60 minutos. ¡Garantizado! Te enseño todo de forma simple y práctica, sin
+                  tecnicismos complicados.
+                </p>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
 
+      {/* Benefits Section - NEW */}
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">¿Por Qué Elegir Rulo.pro?</h2>
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+              No soy solo otro desarrollador web. Soy un consultor digital especializado en profesionales latinos que
+              entiende las necesidades específicas de tu mercado y audiencia.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="text-center p-6 bg-gradient-to-br from-[#2E8B57]/5 to-[#20B2AA]/5 rounded-2xl">
+              <TrendingUp className="h-12 w-12 text-[#2E8B57] mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-gray-900 mb-3">ROI Comprobado</h3>
+              <p className="text-gray-600">
+                Mis clientes recuperan su inversión en promedio en 90 días. Algunos en solo 30 días con el aumento de
+                citas y la reducción de no-shows.
+              </p>
+            </div>
+
+            <div className="text-center p-6 bg-gradient-to-br from-[#FFD700]/5 to-[#FFA500]/5 rounded-2xl">
+              <Users className="h-12 w-12 text-[#FFD700] mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Enfoque Latino</h3>
+              <p className="text-gray-600">
+                Entiendo la cultura, el idioma y las necesidades específicas de profesionales latinos en Estados Unidos.
+                Tu web hablará el idioma de tus clientes.
+              </p>
+            </div>
+
+            <div className="text-center p-6 bg-gradient-to-br from-[#2E8B57]/5 to-[#20B2AA]/5 rounded-2xl">
+              <Award className="h-12 w-12 text-[#2E8B57] mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Garantía Total</h3>
+              <p className="text-gray-600">
+                Si no recuperas tu inversión en 90 días, te devuelvo el 50% de tu dinero. Así de seguro estoy de mis
+                resultados.
+              </p>
+            </div>
+
+            <div className="text-center p-6 bg-gradient-to-br from-[#FFD700]/5 to-[#FFA500]/5 rounded-2xl">
+              <Smartphone className="h-12 w-12 text-[#FFD700] mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Tecnología Avanzada</h3>
+              <p className="text-gray-600">
+                IA, automatización, pagos crypto, apps móviles. Uso las últimas tecnologías pero las hago simples para
+                que las uses sin complicaciones.
+              </p>
+            </div>
+
+            <div className="text-center p-6 bg-gradient-to-br from-[#2E8B57]/5 to-[#20B2AA]/5 rounded-2xl">
+              <Shield className="h-12 w-12 text-[#2E8B57] mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Compliance Total</h3>
+              <p className="text-gray-600">
+                HIPAA para médicos, regulaciones FTC para abogados, cumplimiento fiscal para crypto. Todo legal y
+                profesional desde el día uno.
+              </p>
+            </div>
+
+            <div className="text-center p-6 bg-gradient-to-br from-[#FFD700]/5 to-[#FFA500]/5 rounded-2xl">
+              <Clock className="h-12 w-12 text-[#FFD700] mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Soporte 24/7</h3>
+              <p className="text-gray-600">
+                No te dejo solo después de la entrega. Soporte técnico continuo y actualizaciones incluidas para que
+                siempre estés al día.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Packages */}
-      <section id="servicios" className="py-12 sm:py-16 lg:py-24 bg-white">
+      <section id="servicios" className="py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16 lg:mb-20">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 px-2">
               Paquetes de Transformación Digital
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-              Elegí el nivel que mejor se adapte a tu práctica:
+              Elegí el nivel que mejor se adapte a tu práctica. Cada paquete está diseñado para diferentes etapas de
+              crecimiento y necesidades específicas de automatización:
             </p>
           </div>
 
@@ -397,7 +507,7 @@ export default function RuloProLanding() {
               </CardContent>
             </Card>
 
-            {/* Premium Package - REMOVE THE SCALE TRANSFORM */}
+            {/* Premium Package */}
             <Card className="relative border-0 shadow-2xl hover:shadow-3xl transition-all duration-300 bg-white rounded-2xl overflow-hidden group">
               <div className="absolute -top-3 sm:-top-4 left-1/2 transform -translate-x-1/2 z-10">
                 <Badge className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-gray-900 px-4 sm:px-6 py-1.5 sm:py-2 text-xs sm:text-sm font-bold rounded-full shadow-lg">
@@ -510,11 +620,14 @@ export default function RuloProLanding() {
       </section>
 
       {/* Testimonials */}
-      <section id="casos" className="py-16 lg:py-24 bg-gradient-to-br from-slate-50 to-blue-50">
+      <section id="casos" className="py-16 lg:py-24 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Casos de Éxito Reales</h2>
-            <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">Resultados que hablan por sí solos:</p>
+            <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
+              Resultados que hablan por sí solos. Estos profesionales transformaron completamente sus prácticas y
+              multiplicaron sus ingresos con mis sistemas digitales:
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-10 px-2">
@@ -540,7 +653,8 @@ export default function RuloProLanding() {
                 </div>
                 <p className="text-gray-700 italic">
                   "Rulo implementó un sistema de recordatorios automáticos para mi clínica dental. En 1 mes, reduje
-                  citas perdidas de 12 a 2. <strong className="text-[#2E8B57]">¡Eso son $5,000 extra!</strong>"
+                  citas perdidas de 12 a 2. <strong className="text-[#2E8B57]">¡Eso son $5,000 extra mensuales!</strong>
+                  Ahora mis pacientes reciben recordatorios por WhatsApp, SMS y email automáticamente."
                 </p>
               </CardContent>
             </Card>
@@ -567,7 +681,8 @@ export default function RuloProLanding() {
                 </div>
                 <p className="text-gray-700 italic">
                   "Mi web bilingüe me posicionó como la abogada #1 en Google para 'inmigración Houston'.
-                  <strong className="text-[#2E8B57]">Tripliqué mis consultas en 3 meses.</strong>"
+                  <strong className="text-[#2E8B57]">Tripliqué mis consultas en 3 meses.</strong> Los clientes latinos
+                  ahora me encuentran fácilmente y confían en mi servicio desde el primer contacto."
                 </p>
               </CardContent>
             </Card>
@@ -595,7 +710,8 @@ export default function RuloProLanding() {
                 <p className="text-gray-700 italic">
                   "Los pagos en crypto me abrieron un mercado internacional. Ahora recibo pacientes de toda
                   Latinoamérica.
-                  <strong className="text-[#2E8B57]">ROI del 400% en 6 meses.</strong>"
+                  <strong className="text-[#2E8B57]">ROI del 400% en 6 meses.</strong> Pacientes de Colombia, México y
+                  Argentina pagan sus cirugías con Bitcoin y USDC sin problemas."
                 </p>
               </CardContent>
             </Card>
@@ -604,14 +720,17 @@ export default function RuloProLanding() {
       </section>
 
       {/* Trust Badges */}
-      <section className="py-8 sm:py-12 lg:py-16 bg-white">
+      <section className="py-8 sm:py-12 lg:py-16 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 text-center px-2">
             <div className="flex items-center justify-center space-x-4 p-6 bg-gradient-to-br from-[#0F4C81]/5 to-[#0F4C81]/10 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
               <Globe className="h-8 w-8 text-[#0F4C81] flex-shrink-0" />
               <div>
                 <h3 className="font-bold text-gray-900">Experiencia Internacional</h3>
-                <p className="text-gray-600">Compliance y regulaciones globales</p>
+                <p className="text-gray-600">
+                  Compliance y regulaciones globales. Trabajo con profesionales en 15 países, entendiendo las leyes
+                  locales y federales de cada mercado.
+                </p>
               </div>
             </div>
 
@@ -619,7 +738,10 @@ export default function RuloProLanding() {
               <Shield className="h-8 w-8 text-[#2E8B57] flex-shrink-0" />
               <div>
                 <h3 className="font-bold text-gray-900">Garantía Rulo</h3>
-                <p className="text-gray-600">Recuperas tu inversión en 90 días o te devuelvo 50%</p>
+                <p className="text-gray-600">
+                  Recuperas tu inversión en 90 días o te devuelvo 50%. Además, soporte técnico gratuito por 6 meses y
+                  actualizaciones incluidas.
+                </p>
               </div>
             </div>
           </div>
@@ -637,6 +759,7 @@ export default function RuloProLanding() {
           <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-10 text-blue-100 max-w-2xl mx-auto px-4">
             Cada día que pasa sin automatizar tu práctica,
             <span className="text-[#FFD700] font-semibold"> pierdes entre $300-800 en citas perdidas.</span>
+            Mientras lees esto, tus competidores ya están implementando sistemas automáticos que les dan ventaja.
           </p>
 
           <div className="mb-8 sm:mb-10 space-y-3 sm:space-y-4 px-2">
@@ -647,7 +770,7 @@ export default function RuloProLanding() {
               </div>
               <p className="text-xs sm:text-sm text-red-100">
                 Los profesionales que no se digitalicen AHORA quedarán fuera del mercado. Tus competidores ya están
-                automatizando.
+                automatizando sus procesos y capturando a TUS clientes potenciales.
               </p>
             </div>
 
@@ -684,7 +807,9 @@ export default function RuloProLanding() {
           </div>
 
           <p className="mt-6 sm:mt-8 text-blue-200 text-base sm:text-lg px-4">
-            Soy Latino y hoy ayudo a profesionales como tú a conquistar sus sueños... digitalmente.
+            Soy Latino y hoy ayudo a profesionales como tú a conquistar sus sueños... digitalmente. No importa si eres
+            dentista en Miami, abogado en Houston o cirujano en Los Angeles, mi misión es hacer que la tecnología
+            trabaje para ti, no contra ti.
           </p>
         </div>
       </section>
@@ -697,7 +822,8 @@ export default function RuloProLanding() {
               ¿Prefieres escribir?
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
-              Déjame tus datos y te contacto en menos de 2 horas:
+              Déjame tus datos y te contacto en menos de 2 horas con una propuesta personalizada para tu tipo de
+              práctica profesional:
             </p>
           </div>
 
@@ -744,7 +870,7 @@ export default function RuloProLanding() {
                     ¿Cuál es tu mayor dolor digital?
                   </label>
                   <Textarea
-                    placeholder="Ej: Pierdo muchas citas porque todo lo manejo manual..."
+                    placeholder="Ej: Pierdo muchas citas porque todo lo manejo manual, mi web no genera confianza, quiero aceptar pagos crypto..."
                     className="w-full h-32 rounded-xl border-gray-200 focus:border-[#2E8B57] focus:ring-[#2E8B57]"
                   />
                 </div>
@@ -776,7 +902,10 @@ export default function RuloProLanding() {
                   <span className="text-xs text-blue-200 font-mono">Digital Consulting</span>
                 </div>
               </div>
-              <p className="text-blue-200">Consultoría Digital Premium para Profesionales Latinos</p>
+              <p className="text-blue-200">
+                Consultoría Digital Premium para Profesionales Latinos. Transformamos prácticas tradicionales en
+                negocios digitales de alto rendimiento.
+              </p>
             </div>
 
             <div>
@@ -790,6 +919,10 @@ export default function RuloProLanding() {
                   <span className="mr-2">🌍</span>
                   Servicio Internacional
                 </p>
+                <p className="flex items-center">
+                  <span className="mr-2">⏰</span>
+                  Respuesta en menos de 1 hora
+                </p>
               </div>
             </div>
 
@@ -800,6 +933,8 @@ export default function RuloProLanding() {
                 <li>• Bufetes de Abogados</li>
                 <li>• Consultorios Médicos</li>
                 <li>• Cirujanos Plásticos</li>
+                <li>• Especialistas en Salud</li>
+                <li>• Profesionales Independientes</li>
               </ul>
             </div>
           </div>

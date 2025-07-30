@@ -34,9 +34,9 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Rulo.pro | Consultoría Digital Premium para Profesionales Latinos",
+  title: "Rulo.pro | Consultor Digital para Profesionales",
   description:
-    "Transformo tu práctica profesional con sistemas digitales que generan resultados reales. Especializado en dentistas, abogados y médicos latinos. Automatización en 72h.",
+    "Transformo tu práctica profesional con sistemas digitales que generan resultados reales. Automatización en 72h para dentistas, abogados y médicos.",
   keywords: [
     "consultor digital profesionales latinos",
     "automatizar citas dentistas",
@@ -45,6 +45,9 @@ export const metadata: Metadata = {
     "marketing digital profesionales salud",
     "automatización clínicas dentales",
     "software médico bilingüe",
+    "consultoría digital miami",
+    "desarrollo web profesionales",
+    "sistemas automatización médica",
   ],
   authors: [{ name: "Rulo.pro", url: "https://rulo.pro" }],
   creator: "Rulo.pro",
@@ -63,7 +66,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Rulo.pro | Consultoría Digital Premium para Profesionales Latinos",
+    title: "Rulo.pro | Consultor Digital para Profesionales",
     description:
       "Transformo tu práctica profesional con sistemas digitales que generan resultados reales. Automatización en 72h.",
     url: "https://rulo.pro",
@@ -73,7 +76,7 @@ export const metadata: Metadata = {
         url: "https://sjc.microlink.io/Br6vP1QxGgnDe0OlAqkh4RDeJToP25LXjw0ctrKaGSlgu4WN0pGlw-jNDDcOlnuwMwZ_GRl13cbbKXt3C1oFEQ.jpeg",
         width: 1200,
         height: 630,
-        alt: "Rulo.pro - Consultoría Digital Premium",
+        alt: "Rulo.pro - Consultoría Digital Premium para Profesionales",
       },
     ],
     locale: "es_US",
@@ -81,7 +84,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rulo.pro | Consultoría Digital Premium",
+    title: "Rulo.pro | Consultor Digital Premium",
     description: "Transformo tu práctica profesional con sistemas digitales que generan resultados reales.",
     images: [
       "https://sjc.microlink.io/Br6vP1QxGgnDe0OlAqkh4RDeJToP25LXjw0ctrKaGSlgu4WN0pGlw-jNDDcOlnuwMwZ_GRl13cbbKXt3C1oFEQ.jpeg",
