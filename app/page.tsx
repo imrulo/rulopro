@@ -172,23 +172,31 @@ export default function RuloProLanding() {
 
             {/* Trust Indicators */}
             <div
-              className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-12 max-w-4xl mx-auto animate-fade-in-up"
+              className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 mb-12 max-w-4xl mx-auto animate-fade-in-up px-2"
               style={{ animationDelay: "0.6s" }}
             >
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 group">
-                <div className="text-2xl sm:text-3xl mb-2 group-hover:scale-110 transition-transform">🏥</div>
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 group">
+                <div className="text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2 group-hover:scale-110 transition-transform">
+                  🏥
+                </div>
                 <div className="text-xs sm:text-sm text-gray-600 font-medium">Clínicas</div>
               </div>
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 group">
-                <div className="text-2xl sm:text-3xl mb-2 group-hover:scale-110 transition-transform">⚖️</div>
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 group">
+                <div className="text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2 group-hover:scale-110 transition-transform">
+                  ⚖️
+                </div>
                 <div className="text-xs sm:text-sm text-gray-600 font-medium">Abogados</div>
               </div>
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 group">
-                <div className="text-2xl sm:text-3xl mb-2 group-hover:scale-110 transition-transform">🦷</div>
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 group">
+                <div className="text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2 group-hover:scale-110 transition-transform">
+                  🦷
+                </div>
                 <div className="text-xs sm:text-sm text-gray-600 font-medium">Dentistas</div>
               </div>
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 group">
-                <div className="text-2xl sm:text-3xl mb-2 group-hover:scale-110 transition-transform">🔬</div>
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 group">
+                <div className="text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2 group-hover:scale-110 transition-transform">
+                  🔬
+                </div>
                 <div className="text-xs sm:text-sm text-gray-600 font-medium">Cirujanos</div>
               </div>
             </div>
@@ -227,7 +235,7 @@ export default function RuloProLanding() {
             Estos son los dolores más comunes que veo en profesionales exitosos:
           </p>
 
-          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 text-left mb-16">
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 text-left mb-12 sm:mb-16 px-2">
             <div className="flex items-start space-x-4 p-6 bg-gradient-to-br from-red-50 to-red-100/50 rounded-2xl border border-red-200/50 shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="text-red-500 mt-1 text-xl">❌</div>
               <div>
@@ -288,7 +296,7 @@ export default function RuloProLanding() {
             <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">Mi proceso probado en 4 pasos simples:</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 xl:gap-10 px-2">
             <Card className="text-center p-6 border-0 shadow-xl hover:shadow-2xl transition-all duration-300 bg-white/90 backdrop-blur-sm rounded-2xl group">
               <CardContent className="pt-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#2E8B57] to-[#20B2AA] rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
@@ -333,53 +341,53 @@ export default function RuloProLanding() {
       </section>
 
       {/* Packages */}
-      <section id="servicios" className="py-16 lg:py-24 bg-white">
+      <section id="servicios" className="py-12 sm:py-16 lg:py-24 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 px-2">
               Paquetes de Transformación Digital
             </h2>
-            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
               Elegí el nivel que mejor se adapte a tu práctica:
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 lg:gap-10">
+          <div className="grid lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 px-2">
             {/* Basic Package */}
             <Card className="relative border-0 shadow-xl hover:shadow-2xl transition-all duration-300 bg-white rounded-2xl overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-100/50 opacity-50"></div>
-              <CardContent className="relative p-8">
+              <CardContent className="relative p-6 sm:p-8">
                 <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">BÁSICO</h3>
-                  <div className="text-4xl font-bold text-[#2E8B57] mb-2">$2,500</div>
-                  <p className="text-gray-600">Presencia digital profesional</p>
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">BÁSICO</h3>
+                  <div className="text-3xl sm:text-4xl font-bold text-[#2E8B57] mb-2">$2,500</div>
+                  <p className="text-sm sm:text-base text-gray-600">Presencia digital profesional</p>
                 </div>
 
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-[#2E8B57] mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">Web bilingüe (ES/EN) responsive</span>
+                <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-[#2E8B57] mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-gray-700">Web bilingüe (ES/EN) responsive</span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-[#2E8B57] mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">Sistema de agenda online</span>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-[#2E8B57] mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-gray-700">Sistema de agenda online</span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-[#2E8B57] mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">Formulario de contacto inteligente</span>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-[#2E8B57] mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-gray-700">Formulario de contacto inteligente</span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-[#2E8B57] mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">Optimización SEO básica</span>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-[#2E8B57] mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-gray-700">Optimización SEO básica</span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-[#2E8B57] mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">Hosting y dominio incluido (1 año)</span>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-[#2E8B57] mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-gray-700">Hosting y dominio incluido (1 año)</span>
                   </li>
                 </ul>
 
                 <Button
-                  className="w-full bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 btn-premium"
+                  className="w-full bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white py-2.5 sm:py-3 text-sm sm:text-base rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 btn-premium"
                   asChild
                 >
                   <Link href="https://wa.link/6difl3" target="_blank">
@@ -389,52 +397,52 @@ export default function RuloProLanding() {
               </CardContent>
             </Card>
 
-            {/* Premium Package */}
-            <Card className="relative border-0 shadow-2xl hover:shadow-3xl transition-all duration-300 bg-white rounded-2xl overflow-hidden transform scale-105 group">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                <Badge className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-gray-900 px-6 py-2 font-bold rounded-full shadow-lg">
+            {/* Premium Package - REMOVE THE SCALE TRANSFORM */}
+            <Card className="relative border-0 shadow-2xl hover:shadow-3xl transition-all duration-300 bg-white rounded-2xl overflow-hidden group">
+              <div className="absolute -top-3 sm:-top-4 left-1/2 transform -translate-x-1/2 z-10">
+                <Badge className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-gray-900 px-4 sm:px-6 py-1.5 sm:py-2 text-xs sm:text-sm font-bold rounded-full shadow-lg">
                   MÁS POPULAR
                 </Badge>
               </div>
               <div className="absolute inset-0 bg-gradient-to-br from-[#FFD700]/10 to-[#FFA500]/10"></div>
-              <CardContent className="relative p-8 pt-12">
+              <CardContent className="relative p-6 sm:p-8 pt-8 sm:pt-12">
                 <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">PREMIUM</h3>
-                  <div className="text-4xl font-bold text-[#2E8B57] mb-2">$4,900</div>
-                  <p className="text-gray-600">Automatización completa</p>
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">PREMIUM</h3>
+                  <div className="text-3xl sm:text-4xl font-bold text-[#2E8B57] mb-2">$4,900</div>
+                  <p className="text-sm sm:text-base text-gray-600">Automatización completa</p>
                 </div>
 
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-[#2E8B57] mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">
+                <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-[#2E8B57] mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-gray-700">
                       <strong>Todo del paquete Básico +</strong>
                     </span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-[#2E8B57] mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">Automatización WhatsApp/SMS</span>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-[#2E8B57] mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-gray-700">Automatización WhatsApp/SMS</span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-[#2E8B57] mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">Pasarela de pagos (Stripe)</span>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-[#2E8B57] mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-gray-700">Pasarela de pagos (Stripe)</span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-[#2E8B57] mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">Recordatorios automáticos</span>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-[#2E8B57] mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-gray-700">Recordatorios automáticos</span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-[#2E8B57] mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">Dashboard de métricas</span>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-[#2E8B57] mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-gray-700">Dashboard de métricas</span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-[#2E8B57] mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">Integración con Google Calendar</span>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-[#2E8B57] mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-gray-700">Integración con Google Calendar</span>
                   </li>
                 </ul>
 
                 <Button
-                  className="w-full bg-gradient-to-r from-[#FFD700] to-[#FFA500] hover:from-[#FFA500] hover:to-[#FFD700] text-gray-900 py-3 rounded-xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300 btn-premium"
+                  className="w-full bg-gradient-to-r from-[#FFD700] to-[#FFA500] hover:from-[#FFA500] hover:to-[#FFD700] text-gray-900 py-2.5 sm:py-3 text-sm sm:text-base rounded-xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300 btn-premium"
                   asChild
                 >
                   <Link href="https://wa.link/6difl3" target="_blank">
@@ -447,48 +455,48 @@ export default function RuloProLanding() {
             {/* Elite Package */}
             <Card className="relative border-0 shadow-xl hover:shadow-2xl transition-all duration-300 bg-white rounded-2xl overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-br from-[#2E8B57]/5 to-[#20B2AA]/5"></div>
-              <CardContent className="relative p-8">
+              <CardContent className="relative p-6 sm:p-8">
                 <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">ÉLITE</h3>
-                  <div className="text-4xl font-bold text-[#2E8B57] mb-2">$7,400</div>
-                  <p className="text-gray-600">Tecnología del futuro</p>
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">ÉLITE</h3>
+                  <div className="text-3xl sm:text-4xl font-bold text-[#2E8B57] mb-2">$7,400</div>
+                  <p className="text-sm sm:text-base text-gray-600">Tecnología del futuro</p>
                 </div>
 
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-[#2E8B57] mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">
+                <ul className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-[#2E8B57] mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-gray-700">
                       <strong>Todo del paquete Premium +</strong>
                     </span>
                   </li>
-                  <li className="flex items-center">
-                    <Bitcoin className="h-5 w-5 text-[#FFD700] mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">Pasarela de pagos Crypto</span>
+                  <li className="flex items-start">
+                    <Bitcoin className="h-4 w-4 sm:h-5 sm:w-5 text-[#FFD700] mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-gray-700">Pasarela de pagos Crypto</span>
                   </li>
-                  <li className="flex items-center">
-                    <Star className="h-5 w-5 text-[#FFD700] mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">NFTs para citas prioritarias*</span>
+                  <li className="flex items-start">
+                    <Star className="h-4 w-4 sm:h-5 sm:w-5 text-[#FFD700] mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-gray-700">NFTs para citas prioritarias*</span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-[#2E8B57] mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">IA para atención al cliente</span>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-[#2E8B57] mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-gray-700">IA para atención al cliente</span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-[#2E8B57] mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">App móvil personalizada</span>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-[#2E8B57] mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-gray-700">App móvil personalizada</span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-[#2E8B57] mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">Soporte prioritario 24/7</span>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-[#2E8B57] mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-gray-700">Soporte prioritario 24/7</span>
                   </li>
                 </ul>
 
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-6 px-2">
                   *Ej: NFT para acceso VIP a cirujanos estéticos o abogados corporativos
                 </p>
 
                 <Button
-                  className="w-full bg-gradient-to-r from-[#2E8B57] to-[#20B2AA] hover:from-[#20B2AA] hover:to-[#2E8B57] text-white py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 btn-premium"
+                  className="w-full bg-gradient-to-r from-[#2E8B57] to-[#20B2AA] hover:from-[#20B2AA] hover:to-[#2E8B57] text-white py-2.5 sm:py-3 text-sm sm:text-base rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 btn-premium"
                   asChild
                 >
                   <Link href="https://wa.link/6difl3" target="_blank">
@@ -509,7 +517,7 @@ export default function RuloProLanding() {
             <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">Resultados que hablan por sí solos:</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-10 px-2">
             <Card className="p-6 bg-white/90 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 rounded-2xl border-l-4 border-l-[#2E8B57]">
               <CardContent className="pt-0">
                 <div className="flex items-center mb-4">
@@ -596,9 +604,9 @@ export default function RuloProLanding() {
       </section>
 
       {/* Trust Badges */}
-      <section className="py-12 lg:py-16 bg-white">
+      <section className="py-8 sm:py-12 lg:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-10 text-center">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 text-center px-2">
             <div className="flex items-center justify-center space-x-4 p-6 bg-gradient-to-br from-[#0F4C81]/5 to-[#0F4C81]/10 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
               <Globe className="h-8 w-8 text-[#0F4C81] flex-shrink-0" />
               <div>
@@ -619,79 +627,81 @@ export default function RuloProLanding() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-[#0F4C81] to-[#1a5a96] text-white relative overflow-hidden">
+      <section className="py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-[#0F4C81] to-[#1a5a96] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=60 height=60 viewBox=0 0 60 60 xmlns=http://www.w3.org/2000/svg%3E%3Cg fill=none fillRule=evenodd%3E%3Cg fill=%23ffffff fillOpacity=0.05%3E%3Ccircle cx=30 cy=30 r=2/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-8 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-6 sm:mb-8 leading-tight px-2">
             ¿Listo para dejar de <span className="text-[#FFD700]">regalar dinero?</span>
           </h2>
 
-          <p className="text-lg sm:text-xl mb-10 text-blue-100 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-10 text-blue-100 max-w-2xl mx-auto px-4">
             Cada día que pasa sin automatizar tu práctica,
             <span className="text-[#FFD700] font-semibold"> pierdes entre $300-800 en citas perdidas.</span>
           </p>
 
-          <div className="mb-10 space-y-4">
-            <div className="bg-red-500/20 border border-red-400 rounded-xl p-4 mb-4">
+          <div className="mb-8 sm:mb-10 space-y-3 sm:space-y-4 px-2">
+            <div className="bg-red-500/20 border border-red-400 rounded-xl p-3 sm:p-4 mb-3 sm:mb-4">
               <div className="flex items-center justify-center space-x-2 text-red-200 mb-2">
-                <Clock className="h-5 w-5" />
-                <span className="font-semibold">URGENTE: Temporada Alta 2025</span>
+                <Clock className="h-4 w-4 sm:h-5 sm:w-5" />
+                <span className="font-semibold text-sm sm:text-base">URGENTE: Temporada Alta 2025</span>
               </div>
-              <p className="text-sm text-red-100">
+              <p className="text-xs sm:text-sm text-red-100">
                 Los profesionales que no se digitalicen AHORA quedarán fuera del mercado. Tus competidores ya están
                 automatizando.
               </p>
             </div>
 
-            <Badge className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-gray-900 px-6 py-3 text-base rounded-full shadow-lg animate-pulse">
+            <Badge className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-gray-900 px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base rounded-full shadow-lg animate-pulse">
               🔥 Precio especial válido solo hasta fin de mes
             </Badge>
           </div>
 
           <Button
             size="lg"
-            className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] hover:from-[#FFA500] hover:to-[#FFD700] text-gray-900 px-12 py-4 text-xl font-bold mb-8 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 btn-premium mobile-optimized"
+            className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] hover:from-[#FFA500] hover:to-[#FFD700] text-gray-900 px-8 sm:px-12 py-3 sm:py-4 text-lg sm:text-xl font-bold mb-6 sm:mb-8 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 btn-premium mobile-optimized mx-2"
             asChild
           >
             <Link href="https://wa.link/6difl3" target="_blank">
-              <MessageCircle className="mr-3 h-6 w-6" />
+              <MessageCircle className="mr-2 sm:mr-3 h-5 w-5 sm:h-6 sm:w-6" />
               Hablar por WhatsApp Ahora
-              <ArrowRight className="ml-3 h-6 w-6" />
+              <ArrowRight className="ml-2 sm:ml-3 h-5 w-5 sm:h-6 sm:w-6" />
             </Link>
           </Button>
 
-          <div className="mt-8 grid md:grid-cols-3 gap-4 text-sm text-blue-200">
+          <div className="mt-6 sm:mt-8 grid md:grid-cols-3 gap-3 sm:gap-4 text-xs sm:text-sm text-blue-200 px-2">
             <div className="flex items-center justify-center space-x-2">
-              <CheckCircle className="h-4 w-4 text-[#FFD700]" />
+              <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 text-[#FFD700] flex-shrink-0" />
               <span>Respuesta en menos de 1 hora</span>
             </div>
             <div className="flex items-center justify-center space-x-2">
-              <CheckCircle className="h-4 w-4 text-[#FFD700]" />
+              <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 text-[#FFD700] flex-shrink-0" />
               <span>Consulta 100% gratuita</span>
             </div>
             <div className="flex items-center justify-center space-x-2">
-              <CheckCircle className="h-4 w-4 text-[#FFD700]" />
+              <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 text-[#FFD700] flex-shrink-0" />
               <span>Sin compromisos</span>
             </div>
           </div>
 
-          <p className="mt-8 text-blue-200 text-lg">
+          <p className="mt-6 sm:mt-8 text-blue-200 text-base sm:text-lg px-4">
             Soy Latino y hoy ayudo a profesionales como tú a conquistar sus sueños... digitalmente.
           </p>
         </div>
       </section>
 
       {/* Contact Form */}
-      <section id="contacto" className="py-16 lg:py-24 bg-gradient-to-br from-slate-50 to-blue-50">
+      <section id="contacto" className="py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">¿Prefieres escribir?</h2>
-            <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 px-2">
+              ¿Prefieres escribir?
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               Déjame tus datos y te contacto en menos de 2 horas:
             </p>
           </div>
 
-          <Card className="p-8 lg:p-10 shadow-2xl border-0 rounded-2xl bg-white/90 backdrop-blur-sm">
+          <Card className="p-6 sm:p-8 lg:p-10 shadow-2xl border-0 rounded-2xl bg-white/90 backdrop-blur-sm mx-2">
             <CardContent>
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -806,14 +816,14 @@ export default function RuloProLanding() {
       </footer>
 
       {/* WhatsApp Float Button */}
-      <div className="fixed bottom-6 right-6 z-50 no-print">
+      <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 no-print">
         <Button
           size="lg"
-          className="bg-[#25D366] hover:bg-[#25D366]/90 text-white rounded-full p-4 shadow-2xl hover:shadow-3xl transition-all duration-300 animate-pulse-glow group"
+          className="bg-[#25D366] hover:bg-[#25D366]/90 text-white rounded-full p-3 sm:p-4 shadow-2xl hover:shadow-3xl transition-all duration-300 animate-pulse-glow group"
           asChild
         >
           <Link href="https://wa.link/6difl3" target="_blank">
-            <MessageCircle className="h-8 w-8 group-hover:scale-110 transition-transform" />
+            <MessageCircle className="h-6 w-6 sm:h-8 sm:w-8 group-hover:scale-110 transition-transform" />
           </Link>
         </Button>
       </div>
