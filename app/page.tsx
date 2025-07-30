@@ -623,13 +623,24 @@ export default function RuloProLanding() {
           </h2>
 
           <p className="text-lg sm:text-xl mb-10 text-blue-100 max-w-2xl mx-auto">
-            Trabajo solo con <span className="text-[#FFD700] font-semibold">3 clientes por mes</span> — asegurando
-            máxima atención a tu proyecto.
+            Cada día que pasa sin automatizar tu práctica,
+            <span className="text-[#FFD700] font-semibold"> pierdes entre $300-800 en citas perdidas.</span>
           </p>
 
-          <div className="mb-10">
-            <Badge className="bg-red-500 text-white px-6 py-3 text-base mb-6 rounded-full shadow-lg animate-pulse">
-              ⚠️ Solo quedan 2 cupos para Febrero 2025
+          <div className="mb-10 space-y-4">
+            <div className="bg-red-500/20 border border-red-400 rounded-xl p-4 mb-4">
+              <div className="flex items-center justify-center space-x-2 text-red-200 mb-2">
+                <Clock className="h-5 w-5" />
+                <span className="font-semibold">URGENTE: Temporada Alta 2025</span>
+              </div>
+              <p className="text-sm text-red-100">
+                Los profesionales que no se digitalicen AHORA quedarán fuera del mercado. Tus competidores ya están
+                automatizando.
+              </p>
+            </div>
+
+            <Badge className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-gray-900 px-6 py-3 text-base rounded-full shadow-lg animate-pulse">
+              🔥 Precio especial válido solo hasta fin de mes
             </Badge>
           </div>
 
@@ -644,6 +655,21 @@ export default function RuloProLanding() {
               <ArrowRight className="ml-3 h-6 w-6" />
             </Link>
           </Button>
+
+          <div className="mt-8 grid md:grid-cols-3 gap-4 text-sm text-blue-200">
+            <div className="flex items-center justify-center space-x-2">
+              <CheckCircle className="h-4 w-4 text-[#FFD700]" />
+              <span>Respuesta en menos de 1 hora</span>
+            </div>
+            <div className="flex items-center justify-center space-x-2">
+              <CheckCircle className="h-4 w-4 text-[#FFD700]" />
+              <span>Consulta 100% gratuita</span>
+            </div>
+            <div className="flex items-center justify-center space-x-2">
+              <CheckCircle className="h-4 w-4 text-[#FFD700]" />
+              <span>Sin compromisos</span>
+            </div>
+          </div>
 
           <p className="mt-8 text-blue-200 text-lg">
             Soy Latino y hoy ayudo a profesionales como tú a conquistar sus sueños... digitalmente.
