@@ -1,8 +1,23 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Bitcoin, ArrowLeft, AlertTriangle, Shield, DollarSign, Clock, TrendingUp } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Términos de Criptomonedas | Rulo.pro",
+  description: "Términos y condiciones para pagos con criptomonedas en Rulo.pro. Información sobre el uso de Bitcoin y otras criptomonedas.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Términos de Criptomonedas | Rulo.pro",
+    description: "Términos y condiciones para pagos con criptomonedas en Rulo.pro.",
+    url: "https://rulo.pro/legal/crypto",
+  },
+}
 
 export default function CryptoTerms() {
   return (

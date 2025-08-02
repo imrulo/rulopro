@@ -1,7 +1,22 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Shield, ArrowLeft, FileText, Lock, Eye, Globe } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Política de Privacidad | Rulo.pro",
+  description: "Política de privacidad de Rulo.pro. Conoce cómo protegemos y manejamos tus datos personales en nuestros servicios de consultoría digital.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Política de Privacidad | Rulo.pro",
+    description: "Política de privacidad de Rulo.pro. Conoce cómo protegemos y manejamos tus datos personales.",
+    url: "https://rulo.pro/legal/privacy",
+  },
+}
 
 export default function PrivacyPolicy() {
   return (
