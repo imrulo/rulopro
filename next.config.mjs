@@ -5,7 +5,7 @@ const nextConfig = {
   
   // Enable compression
   experimental: {
-    optimizeCss: true,
+    // Removed optimizeCss due to build issues with critters dependency
   },
   
   // Image optimization

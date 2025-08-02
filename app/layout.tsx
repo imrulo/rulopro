@@ -96,9 +96,9 @@ export const metadata: Metadata = {
     },
   },
   category: "business",
-  verification: {
-    google: "your-google-verification-code",
-  },
+  verification: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION_CODE ? {
+    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION_CODE,
+  } : undefined,
 }
 
 export default function RootLayout({
@@ -139,18 +139,22 @@ export default function RootLayout({
             __html: JSON.stringify(structuredData),
           }}
         />
-        {/* Google Analytics 4 */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'GA_MEASUREMENT_ID');
-            `,
-          }}
-        />
+        {/* Google Analytics 4 - Only load if GA_MEASUREMENT_ID is configured */}
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+                `,
+              }}
+            />
+          </>
+        )}
       </head>
       <body className="font-sans antialiased">{children}</body>
     </html>
