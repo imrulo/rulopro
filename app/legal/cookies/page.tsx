@@ -1,8 +1,23 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Cookie, ArrowLeft, Settings, Eye, BarChart, Globe } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Política de Cookies | Rulo.pro",
+  description: "Política de cookies de Rulo.pro. Información sobre el uso de cookies y tecnologías similares en nuestro sitio web.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Política de Cookies | Rulo.pro",
+    description: "Política de cookies de Rulo.pro. Información sobre el uso de cookies en nuestro sitio web.",
+    url: "https://rulo.pro/legal/cookies",
+  },
+}
 
 export default function CookiePolicy() {
   return (

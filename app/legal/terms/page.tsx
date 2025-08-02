@@ -1,7 +1,22 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { FileText, ArrowLeft, CheckCircle, AlertTriangle, DollarSign, Clock } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Términos de Servicio | Rulo.pro",
+  description: "Términos y condiciones de servicio de Rulo.pro. Conoce las condiciones de uso de nuestros servicios de consultoría digital premium.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Términos de Servicio | Rulo.pro",
+    description: "Términos y condiciones de servicio de Rulo.pro. Conoce las condiciones de uso de nuestros servicios.",
+    url: "https://rulo.pro/legal/terms",
+  },
+}
 
 export default function TermsOfService() {
   return (

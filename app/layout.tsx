@@ -29,7 +29,10 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Rulo.pro | Consultor Digital para Profesionales Latinos",
+  title: {
+    default: "Rulo.pro | Consultor Digital para Profesionales Latinos",
+    template: "%s | Rulo.pro"
+  },
   description:
     "Automatiza tu captación de clientes y pagos en 72h. Soluciones digitales premium para dentistas, abogados y médicos latinos en EE.UU y LATAM.",
   keywords: [
@@ -38,6 +41,9 @@ export const metadata: Metadata = {
     "sistema pagos crypto médicos",
     "web bilingüe para abogados",
     "automatización WhatsApp para psicólogos",
+    "desarrollo web profesionales hispanos",
+    "consultoría digital Estados Unidos",
+    "pagos criptomonedas profesionales"
   ],
   authors: [{ name: "Rulo.pro", url: "https://rulo.pro" }],
   creator: "Rulo.pro",
@@ -50,6 +56,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://rulo.pro"),
   alternates: {
     canonical: "/",
+    languages: {
+      'es-US': '/es-US',
+      'es': '/',
+    },
   },
   openGraph: {
     title: "Rulo.pro | Consultor Digital para Profesionales Latinos",
@@ -59,13 +69,36 @@ export const metadata: Metadata = {
     siteName: "Rulo.pro",
     type: "website",
     locale: "es_US",
+    images: [
+      {
+        url: "https://rulo.pro/placeholder-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Rulo.pro - Consultoría Digital Premium"
+      }
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rulo.pro | Consultor Digital para Profesionales Latinos",
+    description: "Automatiza tu captación de clientes y pagos en 72h. Soluciones digitales premium para profesionales latinos.",
+    images: ["https://rulo.pro/placeholder-logo.png"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   category: "business",
-    generator: 'v0.dev'
+  verification: {
+    google: "your-google-verification-code",
+  },
 }
 
 export default function RootLayout({
@@ -73,8 +106,52 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Rulo.pro",
+    "description": "Consultoría Digital Premium para Profesionales Latinos en Estados Unidos y LATAM",
+    "url": "https://rulo.pro",
+    "logo": "https://rulo.pro/icon-512.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "availableLanguage": ["Spanish", "English"]
+    },
+    "sameAs": [
+      "https://wa.link/6difl3"
+    ],
+    "areaServed": ["United States", "Latin America"],
+    "serviceType": [
+      "Web Development",
+      "Business Automation",
+      "Digital Consulting",
+      "Cryptocurrency Payment Solutions"
+    ]
+  }
+
   return (
     <html lang="es" className={`${montserrat.variable} ${openSans.variable} scroll-smooth`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
+        />
+        {/* Google Analytics 4 */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'GA_MEASUREMENT_ID');
+            `,
+          }}
+        />
+      </head>
       <body className="font-sans antialiased">{children}</body>
     </html>
   )
