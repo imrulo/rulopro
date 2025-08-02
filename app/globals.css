@@ -214,21 +214,32 @@ html {
 /* WhatsApp float button */
 .whatsapp-float {
   position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
+  width: 56px;
+  height: 56px;
+  bottom: 20px;
+  right: 20px;
   background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
   color: #fff;
   border-radius: 50px;
   text-align: center;
-  font-size: 30px;
+  font-size: 28px;
   box-shadow: 0 8px 32px rgba(37, 211, 102, 0.3);
   z-index: 100;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Larger size on desktop */
+@media (min-width: 768px) {
+  .whatsapp-float {
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    font-size: 30px;
+  }
 }
 
 .whatsapp-float:hover {
@@ -249,6 +260,22 @@ html {
 
   .mobile-spacing {
     margin: 1rem 0;
+  }
+
+  /* Ensure touch targets are at least 44px */
+  .min-touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Better button spacing on mobile */
+  .mobile-button-spacing {
+    padding: 0.75rem 1rem;
+  }
+
+  /* Improved mobile card spacing */
+  .mobile-card-padding {
+    padding: 1rem;
   }
 }
 

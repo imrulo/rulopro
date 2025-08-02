@@ -95,75 +95,80 @@ export default function PricingSection() {
           <p className="text-xl text-slate-600">Elige el nivel que transformará tu práctica profesional</p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 max-w-7xl mx-auto">
           {plans.map((plan, index) => (
             <Card
               key={index}
-              className={`relative ${plan.popular ? "ring-2 ring-amber-500 scale-105" : ""} hover:shadow-2xl transition-all duration-300`}
+              className={`relative ${plan.popular ? "ring-2 ring-amber-500 lg:scale-105" : ""} hover:shadow-2xl transition-all duration-300`}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <div className="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-6 py-2 rounded-full text-sm font-bold">
+                  <div className="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-bold">
                     MÁS POPULAR
                   </div>
                 </div>
               )}
 
-              <CardHeader className="text-center pb-4">
+              <CardHeader className="text-center pb-4 px-4 sm:px-6">
                 <div className="flex justify-center mb-4">
                   <div
-                    className={`w-16 h-16 rounded-full flex items-center justify-center ${
+                    className={`w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center ${
                       plan.popular
                         ? "bg-gradient-to-r from-amber-500 to-amber-600"
                         : "bg-gradient-to-r from-slate-700 to-slate-800"
                     }`}
                   >
-                    <plan.icon className="w-8 h-8 text-white" />
+                    <plan.icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                   </div>
                 </div>
 
-                <CardTitle className="text-2xl font-bold text-slate-800 mb-2">{plan.name}</CardTitle>
+                <CardTitle className="text-xl sm:text-2xl font-bold text-slate-800 mb-2">{plan.name}</CardTitle>
 
                 <div className="mb-4">
                   <div className="flex items-center justify-center space-x-2 mb-2">
-                    <span className="text-4xl font-bold text-slate-800">{plan.price}</span>
+                    <span className="text-3xl sm:text-4xl font-bold text-slate-800">{plan.price}</span>
                     <div className="text-left">
-                      <div className="text-lg text-slate-400 line-through">{plan.originalPrice}</div>
-                      <div className="text-sm text-green-600 font-semibold">Ahorras {plan.savings}</div>
+                      <div className="text-base sm:text-lg text-slate-400 line-through">{plan.originalPrice}</div>
+                      <div className="text-xs sm:text-sm text-green-600 font-semibold">Ahorras {plan.savings}</div>
                     </div>
                   </div>
-                  <div className="text-sm text-slate-600">Pago único • Sin mensualidades</div>
+                  <div className="text-xs sm:text-sm text-slate-600">Pago único • Sin mensualidades</div>
                 </div>
 
-                <p className="text-slate-600 text-sm leading-relaxed">{plan.description}</p>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">{plan.description}</p>
               </CardHeader>
 
-              <CardContent>
-                <ul className="space-y-3 mb-8">
+              <CardContent className="px-4 sm:px-6">
+                <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
                   {plan.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-start space-x-3">
-                      <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                      <span className="text-slate-700 text-sm leading-relaxed">{feature}</span>
+                    <li key={featureIndex} className="flex items-start space-x-2 sm:space-x-3">
+                      <Check className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span className="text-slate-700 text-xs sm:text-sm leading-relaxed">{feature}</span>
                     </li>
                   ))}
                 </ul>
 
                 <Button
                   asChild
-                  className={`w-full py-3 font-semibold text-lg transition-all duration-300 ${
+                  size="lg-mobile"
+                  className={`w-full font-semibold transition-all duration-300 ${
                     plan.popular
                       ? "bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white shadow-lg hover:shadow-xl"
                       : "bg-gradient-to-r from-slate-700 to-slate-800 hover:from-slate-800 hover:to-slate-900 text-white"
                   }`}
                 >
                   <Link href="https://wa.link/6difl3" target="_blank">
-                    {plan.cta}
+                    <span className="hidden sm:inline">{plan.cta}</span>
+                    <span className="sm:hidden">
+                      {plan.name === "PROFESIONAL" ? "Empezar" : 
+                       plan.name === "AUTOMATIZACIÓN" ? "Automatizar" : "Acceso VIP"}
+                    </span>
                   </Link>
                 </Button>
 
                 <div className="text-center mt-4">
-                  <div className="text-sm text-slate-500">✓ Consulta gratuita incluida</div>
-                  <div className="text-sm text-slate-500">✓ Garantía de satisfacción</div>
+                  <div className="text-xs sm:text-sm text-slate-500">✓ Consulta gratuita incluida</div>
+                  <div className="text-xs sm:text-sm text-slate-500">✓ Garantía de satisfacción</div>
                 </div>
               </CardContent>
             </Card>

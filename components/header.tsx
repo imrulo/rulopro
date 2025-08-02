@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { Menu } from "lucide-react"
 
 export default function Header() {
   return (
@@ -13,6 +14,7 @@ export default function Header() {
             <span className="text-xl font-bold text-slate-800">RULO.PRO</span>
           </Link>
 
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="#servicios" className="text-slate-600 hover:text-slate-800 transition-colors">
               Servicios
@@ -25,14 +27,29 @@ export default function Header() {
             </Link>
           </nav>
 
-          <Button
-            asChild
-            className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold px-6 py-2 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
-          >
-            <Link href="https://wa.link/6difl3" target="_blank">
-              Consulta Gratuita
-            </Link>
-          </Button>
+          <div className="flex items-center gap-2">
+            {/* Mobile Menu Button */}
+            <Button
+              variant="ghost"
+              size="icon"
+              className="md:hidden text-slate-600 hover:text-slate-800"
+              aria-label="Abrir menú"
+            >
+              <Menu className="h-5 w-5" />
+            </Button>
+
+            {/* CTA Button */}
+            <Button
+              asChild
+              size="sm"
+              className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl text-sm px-3 sm:px-6"
+            >
+              <Link href="https://wa.link/6difl3" target="_blank">
+                <span className="hidden sm:inline">Consulta Gratuita</span>
+                <span className="sm:hidden">Consulta</span>
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </header>

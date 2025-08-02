@@ -25,17 +25,18 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button
               asChild
-              size="lg"
-              className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 shadow-xl hover:shadow-2xl btn-premium text-lg"
+              size="lg-mobile"
+              className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white font-semibold rounded-lg transition-all duration-300 shadow-xl hover:shadow-2xl btn-premium w-full sm:w-auto"
             >
               <Link href="https://wa.link/6difl3" target="_blank">
-                Agenda Auditoría Gratuita (15 min) →
+                <span className="hidden sm:inline">Agenda Auditoría Gratuita (15 min) →</span>
+                <span className="sm:hidden">Auditoría Gratuita →</span>
               </Link>
             </Button>
 
             <div className="flex items-center text-slate-300">
               <Clock className="w-5 h-5 mr-2 text-amber-400" />
-              <span>Entrega garantizada en 72 horas</span>
+              <span className="text-sm sm:text-base">Entrega garantizada en 72 horas</span>
             </div>
           </div>
 
