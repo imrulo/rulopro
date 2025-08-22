@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Zap, TrendingUp, Shield, MessageCircle } from "lucide-react"
+import { ArrowRight, Zap, TrendingUp, Shield } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -47,13 +47,13 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 w-full">
               <Button
                 size="lg"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg flex-1 sm:flex-none sm:min-w-[280px]"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-4 sm:px-8 py-3 sm:py-4 text-sm sm:text-base rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg w-full sm:w-auto"
                 onClick={() => window.open("https://wa.link/6difl3", "_blank")}
               >
-                Agenda una Auditoría Gratuita (15 min)
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <span className="block sm:hidden">Auditoría Gratuita</span>
+                <span className="hidden sm:block">Agenda una Auditoría Gratuita (15 min)</span>
+                <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </Button>
-              
             </div>
 
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border">
@@ -73,7 +73,7 @@ export function HeroSection() {
           </div>
 
           {/* Visual Element */}
-          <div className="relative">
+          <div className="relative px-4 sm:px-0">
             <div className="relative w-full h-96 lg:h-[500px] rounded-2xl bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5 border border-border/50 p-8 flex items-center justify-center backdrop-blur-sm bg-teal-700">
               {/* Professional Vector Illustration */}
               <svg viewBox="0 0 400 400" className="w-full h-full max-w-md">
@@ -133,17 +133,17 @@ export function HeroSection() {
               </svg>
             </div>
 
-            <div className="absolute -top-4 -right-4 bg-card border-2 border-accent/20 rounded-xl p-4 shadow-xl backdrop-blur-sm">
-              <div className="flex items-center gap-2">
-                <TrendingUp className="w-5 h-5 text-accent" />
-                <span className="text-sm font-semibold text-foreground">+300% Crecimiento</span>
+            <div className="absolute top-2 right-2 sm:-top-4 sm:-right-4 bg-card border-2 border-accent/20 rounded-xl p-2 sm:p-4 shadow-xl backdrop-blur-sm max-w-[140px] sm:max-w-none">
+              <div className="flex items-center gap-1 sm:gap-2">
+                <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 text-accent flex-shrink-0" />
+                <span className="text-xs sm:text-sm font-semibold text-foreground">+300% Crecimiento</span>
               </div>
             </div>
 
-            <div className="absolute -bottom-4 -left-4 bg-card border-2 border-primary/20 rounded-xl p-4 shadow-xl backdrop-blur-sm">
-              <div className="flex items-center gap-2">
-                <Shield className="w-5 h-5 text-primary" />
-                <span className="text-sm font-semibold text-foreground">100% Seguro</span>
+            <div className="absolute bottom-2 left-2 sm:-bottom-4 sm:-left-4 bg-card border-2 border-primary/20 rounded-xl p-2 sm:p-4 shadow-xl backdrop-blur-sm max-w-[120px] sm:max-w-none">
+              <div className="flex items-center gap-1 sm:gap-2">
+                <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
+                <span className="text-xs sm:text-sm font-semibold text-foreground">100% Seguro</span>
               </div>
             </div>
           </div>

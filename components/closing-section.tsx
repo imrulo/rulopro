@@ -79,12 +79,13 @@ export function ClosingSection() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
             <Button
               size="lg"
-              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold px-10 py-5 text-lg rounded-xl transition-all duration-300 hover:scale-105 shadow-lg"
+              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold px-4 sm:px-10 py-4 sm:py-5 text-sm sm:text-lg rounded-xl transition-all duration-300 hover:scale-105 shadow-lg w-full sm:w-auto"
               onClick={() => window.open("https://wa.link/6difl3", "_blank")}
             >
-              <MessageCircle className="mr-3 w-6 h-6" />
-              Inicia una Conversación por WhatsApp Ahora
-              <ArrowRight className="ml-3 w-6 h-6" />
+              <MessageCircle className="mr-2 sm:mr-3 w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+              <span className="block sm:hidden">Iniciar Conversación</span>
+              <span className="hidden sm:block">Inicia una Conversación por WhatsApp Ahora</span>
+              <ArrowRight className="ml-2 sm:ml-3 w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
             </Button>
           </div>
 
@@ -142,17 +143,18 @@ export function ClosingSection() {
           </div>
 
           <div className="text-center">
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-base sm:text-lg text-muted-foreground mb-6 px-2">
               <strong className="text-foreground">Solo hay dos opciones:</strong> Seguir como hasta ahora o dar el paso
               que cambiará todo.
             </p>
             <Button
               size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold px-10 py-5 text-lg rounded-xl transition-all duration-300 hover:scale-105 shadow-lg"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold px-4 sm:px-10 py-4 sm:py-5 text-sm sm:text-lg rounded-xl transition-all duration-300 hover:scale-105 shadow-lg w-full sm:w-auto max-w-sm sm:max-w-none mx-auto"
               onClick={() => window.open("https://wa.link/6difl3", "_blank")}
             >
-              Sí, Quiero Transformar mi Negocio AHORA
-              <ArrowRight className="ml-3 w-6 h-6" />
+              <span className="block sm:hidden">Transformar mi Negocio</span>
+              <span className="hidden sm:block">Sí, Quiero Transformar mi Negocio AHORA</span>
+              <ArrowRight className="ml-2 sm:ml-3 w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
             </Button>
             <p className="text-sm text-muted-foreground mt-4">
               ⚡ Respuesta inmediata por WhatsApp • 🎯 Sin compromiso • 🚀 Resultados garantizados
